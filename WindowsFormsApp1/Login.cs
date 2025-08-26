@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,12 +20,25 @@ namespace WindowsFormsApp1
 
         private void btnentrar_Click(object sender, EventArgs e)
         {
+            string connectionString = @"Server=sqlexpress;Database=cj3027651;User Id=aluno;Password=aluno;";
+            string usuario = txtUsuario.Text;
+            string senha = txtsenha.Text;
+            int count;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @usuario AND Senha = @senha";
 
-            string usuario = lblUsuario.Text;
-            string senha = lblsenha.Text;
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@usuario", usuario);
+                    cmd.Parameters.AddWithValue("@senha", senha);
 
-
-            if (usuario == "admin" && senha == "123")
+                    count = (int)cmd.ExecuteScalar();
+                    
+                }
+            }
+            if (count > 0)
             {
                 MessageBox.Show("Login realizado com sucesso!", "Bem-vindo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
