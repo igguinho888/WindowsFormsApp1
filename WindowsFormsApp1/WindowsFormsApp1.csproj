@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\Downloads\Bunifu_UI_v1.5.3_x86\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +51,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="areas.Designer.cs">
+      <DependentUpon>areas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="financeiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="financeiro.Designer.cs">
+      <DependentUpon>financeiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCavalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCavalo.Designer.cs">
+      <DependentUpon>formsCavalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -60,25 +89,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relatorio.Designer.cs">
+      <DependentUpon>relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saude.Designer.cs">
+      <DependentUpon>saude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usarios.Designer.cs">
+      <DependentUpon>usarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCavalo.resx">
+      <DependentUpon>formsCavalo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -87,6 +141,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baixados1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barn2-e1546645303701-1024x610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baixados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cura png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financeiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pessoas png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relatorios png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configurações.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cavalos.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

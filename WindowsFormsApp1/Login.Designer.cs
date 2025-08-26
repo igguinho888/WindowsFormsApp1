@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.txbsenha = new System.Windows.Forms.TextBox();
-            this.txtsenha = new System.Windows.Forms.Label();
-            this.txtcaixa1 = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.Label();
+            this.lblsenha = new System.Windows.Forms.Label();
+            this.txbusuario = new System.Windows.Forms.TextBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.btnentrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -42,34 +42,34 @@
             this.txbsenha.Size = new System.Drawing.Size(175, 20);
             this.txbsenha.TabIndex = 11;
             // 
-            // txtsenha
+            // lblsenha
             // 
-            this.txtsenha.AutoSize = true;
-            this.txtsenha.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtsenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtsenha.Location = new System.Drawing.Point(311, 237);
-            this.txtsenha.Name = "txtsenha";
-            this.txtsenha.Size = new System.Drawing.Size(44, 13);
-            this.txtsenha.TabIndex = 10;
-            this.txtsenha.Text = "SENHA";
+            this.lblsenha.AutoSize = true;
+            this.lblsenha.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblsenha.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblsenha.Location = new System.Drawing.Point(311, 237);
+            this.lblsenha.Name = "lblsenha";
+            this.lblsenha.Size = new System.Drawing.Size(44, 13);
+            this.lblsenha.TabIndex = 10;
+            this.lblsenha.Text = "SENHA";
             // 
-            // txtcaixa1
+            // txbusuario
             // 
-            this.txtcaixa1.Location = new System.Drawing.Point(314, 192);
-            this.txtcaixa1.Name = "txtcaixa1";
-            this.txtcaixa1.Size = new System.Drawing.Size(175, 20);
-            this.txtcaixa1.TabIndex = 9;
+            this.txbusuario.Location = new System.Drawing.Point(314, 192);
+            this.txbusuario.Name = "txbusuario";
+            this.txbusuario.Size = new System.Drawing.Size(175, 20);
+            this.txbusuario.TabIndex = 9;
             // 
-            // txtUsuario
+            // lblUsuario
             // 
-            this.txtUsuario.AutoSize = true;
-            this.txtUsuario.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtUsuario.Location = new System.Drawing.Point(311, 176);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(56, 13);
-            this.txtUsuario.TabIndex = 8;
-            this.txtUsuario.Text = "USUARIO";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblUsuario.Location = new System.Drawing.Point(311, 176);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(56, 13);
+            this.lblUsuario.TabIndex = 8;
+            this.lblUsuario.Text = "USUARIO";
             // 
             // btnentrar
             // 
@@ -90,10 +90,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.txbsenha);
-            this.Controls.Add(this.txtsenha);
-            this.Controls.Add(this.txtcaixa1);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblsenha);
+            this.Controls.Add(this.txbusuario);
+            this.Controls.Add(this.lblUsuario);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -103,9 +104,9 @@
         #endregion
 
         private System.Windows.Forms.TextBox txbsenha;
-        private System.Windows.Forms.Label txtsenha;
-        private System.Windows.Forms.TextBox txtcaixa1;
-        private System.Windows.Forms.Label txtUsuario;
+        private System.Windows.Forms.Label lblsenha;
+        private System.Windows.Forms.TextBox txbusuario;
+        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Button btnentrar;
     }
 }

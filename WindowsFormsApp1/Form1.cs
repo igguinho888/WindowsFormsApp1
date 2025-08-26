@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
             string CPF = mtbcpf.Text;
             string nome = txbnome.Text;
             string termosegur = ckbsegurança.Checked.ToString(); ;
-            string informações = rdbinformações.Checked.ToString(); ;
+            string informacoes = rdbinformações.Checked.ToString(); ;
             // 🔹 Caminho do arquivo na mesma pasta do programa
             string caminho = Path.Combine(Application.StartupPath, "usuarios.txt");
 

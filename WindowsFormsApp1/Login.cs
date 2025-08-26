@@ -20,29 +20,30 @@ namespace WindowsFormsApp1
 
         private void btnentrar_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Server=sqlexpress;Database=cj3027651;User Id=aluno;Password=aluno;";
-            string usuario = txtUsuario.Text;
-            string senha = txtsenha.Text;
+            string connectionString = @"Server=sqlexpress;Database=BASE25CJ3027651;User Id=aluno;Password=aluno;";
+            string usuario = txbusuario.Text;
+            string senha = txbsenha.Text;
             int count;
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @usuario AND Senha = @senha";
+                string query = "SELECT * FROM Usuarios WHERE Usuario=@usuario AND Senha=@senha";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@usuario", usuario);
                     cmd.Parameters.AddWithValue("@senha", senha);
 
-                    count = (int)cmd.ExecuteScalar();
+                    count = cmd.ExecuteReader().HasRows == true ? 1 : 0;
                     
                 }
             }
             if (count > 0)
             {
-                MessageBox.Show("Login realizado com sucesso!", "Bem-vindo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Principal principal = new Principal();
+                this.Visible = false;
+                principal.ShowDialog();
+                this.Visible = true;
             }
             else
             {
