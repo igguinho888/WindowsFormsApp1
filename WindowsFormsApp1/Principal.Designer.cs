@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnsair = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnconfig = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnrelatorios = new Bunifu.Framework.UI.BunifuTileButton();
@@ -41,17 +40,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(347, 60);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
             // btnsair
             // 
-            this.btnsair.BackColor = System.Drawing.Color.Green;
-            this.btnsair.color = System.Drawing.Color.Blue;
+            this.btnsair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnsair.color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnsair.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnsair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
@@ -66,11 +58,12 @@
             this.btnsair.Name = "btnsair";
             this.btnsair.Size = new System.Drawing.Size(115, 112);
             this.btnsair.TabIndex = 9;
+            this.btnsair.Click += new System.EventHandler(this.btnsair_Click);
             // 
             // btnconfig
             // 
-            this.btnconfig.BackColor = System.Drawing.Color.SlateGray;
-            this.btnconfig.color = System.Drawing.Color.Blue;
+            this.btnconfig.BackColor = System.Drawing.Color.Cyan;
+            this.btnconfig.color = System.Drawing.Color.Cyan;
             this.btnconfig.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnconfig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnconfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
@@ -89,7 +82,7 @@
             // btnrelatorios
             // 
             this.btnrelatorios.BackColor = System.Drawing.Color.White;
-            this.btnrelatorios.color = System.Drawing.Color.Blue;
+            this.btnrelatorios.color = System.Drawing.Color.White;
             this.btnrelatorios.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.btnrelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnrelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
@@ -228,7 +221,6 @@
             this.Controls.Add(this.btnsaude);
             this.Controls.Add(this.btncavalo);
             this.Controls.Add(this.btnareas);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -242,7 +234,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private Bunifu.Framework.UI.BunifuTileButton btnareas;
         private Bunifu.Framework.UI.BunifuTileButton btncavalo;
         private Bunifu.Framework.UI.BunifuTileButton btnsaude;

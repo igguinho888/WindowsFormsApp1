@@ -21,5 +21,35 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextbox3_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextbox2_OnTextChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextbox3_OnTextChange_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

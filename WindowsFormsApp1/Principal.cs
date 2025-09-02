@@ -62,5 +62,10 @@ namespace WindowsFormsApp1
             relatorio formrelatorios = new relatorio();
             formrelatorios.Show();
         }
+
+        private void btnsair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

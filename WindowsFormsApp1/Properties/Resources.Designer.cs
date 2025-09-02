@@ -103,6 +103,126 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_111817 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 111817", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_114719 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 114719", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_114948 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 114948", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_115142 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 115142", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_115841 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 115841", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_1158411 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 1158411", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_120348 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 120348", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_121303 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 121303", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_09_02_122211 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-09-02 122211", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cavalo {
+            get {
+                object obj = ResourceManager.GetObject("cavalo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cavalo1 {
+            get {
+                object obj = ResourceManager.GetObject("cavalo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cavalo11 {
+            get {
+                object obj = ResourceManager.GetObject("cavalo11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cavalos {
             get {
                 object obj = ResourceManager.GetObject("cavalos", resourceCulture);
@@ -166,6 +286,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap pessoas_png {
             get {
                 object obj = ResourceManager.GetObject("pessoas png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R_A_S___Romeu_Area_System_ {
+            get {
+                object obj = ResourceManager.GetObject("R.A.S. (Romeu Area System)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
