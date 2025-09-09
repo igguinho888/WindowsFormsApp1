@@ -78,6 +78,7 @@
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(162, 17);
             this.bunifuCustomLabel3.TabIndex = 3;
             this.bunifuCustomLabel3.Text = "DATA DE NASCIMENTO";
+            this.bunifuCustomLabel3.Click += new System.EventHandler(this.bunifuCustomLabel3_Click);
             // 
             // bunifuCustomLabel4
             // 
@@ -139,6 +140,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox1
             // 
